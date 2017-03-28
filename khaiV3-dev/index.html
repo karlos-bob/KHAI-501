@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="cleartype" content="on">
+    <meta name="MobileOptimized" content="320">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, user-scalable=no">
+
+
+
+    <title>XAI_3</title>
+    
+ 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+ 	<link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+
+ 	
+
+
+
+
+
+	<link rel="icon" type="image/vnd.microsoft.icon" href="images/favicon.ico">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/1.13.0/mocha.min.css">
+    <link rel="stylesheet" href="libs/owl-carousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap-theme.css">
+    <link rel="stylesheet" href="libs/font-awesome-4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href='css/style.css'>
+    <link rel="stylesheet" href="css/responsive-grid.css">
+
+    
+    <script src="libs/jquery/dist/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js"></script>
+</head>
+<body>
+
+<nav id="menu" class="menu">
+					<div class="menu-header">
+						<i class="fa fa-times js-slideout-toggle2" aria-hidden="true"></i>
+						<form class="form-wrapper">
+								<!-- <button type="submit"><i class="fa fa-search"></i></button> -->
+								<input type="text" placeholder="Поиск" required>
+								
+						</form>
+					</div>
+					<ul id="main-menu">
+						<li class="mm-item"><a href="#">Главная</a></li>
+						<li class="mm-item"><a href="#">Новости</a></li>
+						<li class="mm-item"><a href="#">Кафедра</a>
+							<ul class="sub-mm">
+								<li><a href="#">Преподователи</a></li>
+								<li><a href="#">Аспиранты</a></li>
+								<li><a href="#">Научная школа</a></li>
+								<li><a href="#">Библиотека</a></li>
+							</ul>
+
+						</li>
+						<li class="mm-item"><a href="#">Абитуриенту</a>
+							<ul class="sub-mm">
+								<li><a href="#">Правила приема</a></li>
+							</ul>
+						</li>
+						<li class="mm-item"><a href="#">Галлерея</a></li>
+					</ul>
+</nav>
+
+<main id="panel">
+<div class="wrapper">
+	<header>
+		<div id="top-header-area">
+			<div class="container">
+
+				<ul class="contact-info">
+					<li><i class="fa fa-phone" aria-hidden="true"></i>+3(057) 788 43 51</li>
+					<li><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:k501@ai.kharkov.com" title="Contact Email">k501@ai.kharkov.com</a></li>
+				</ul>
+
+				<nav id="header-menu">
+					<ul class="top-header-menu">
+						<li class="th-menu-item"><a href="">Обратная связь</a></li>
+						<li class="th-menu-item"><a href="">Контакты</a></li>
+						<li class="th-menu-item lang-menu">
+							<a href="">Язык</a>
+							<ul class="lang-dropdown">
+								<li><a href="">Русский</a></li>
+								<li><a href="">Українська</a></li>
+								<li><a href="">English</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+
+			</div>
+		</div>
+		<div class="container">
+			<div class="wrap">
+				<div class="site-logo">
+					<a href=""><img src="images/logo_200.png" alt="logo"></a>
+				</div>
+				<!-- <button class="btn-hamburger js-slideout-toggle">Клацни меня</button> -->
+				<i id="menu-pull" class="fa fa-bars js-slideout-toggle" aria-hidden="true"></i>
+				<nav id="primary-menu">
+					<button  id ="close" class="menu-close">x</button>
+					<form class="form-wrapper">
+						<input type="text" placeholder="Поиск" required>
+						<button type="submit"><i class="fa fa-search"></i></button>
+					</form>
+					<ul id="main-menu">
+						<li class="mm-item"><a href="">Главная</a></li>
+						<li class="mm-item"><a href="">Новости</a></li>
+						<li class="mm-item"><a href="">Кафедра</a>
+							<ul class="sub-mm">
+								<li><a href="">Преподователи</a></li>
+								<li><a href="">Аспиранты</a></li>
+								<li><a href="">Научная школа</a></li>
+								<li><a href="">Библиотека</a></li>
+							</ul>
+
+						</li>
+						<li class="mm-item"><a href="">Абитуриенту</a>
+							<ul class="sub-mm">
+								<li><a href="">Правила приема</a></li>
+							</ul>
+						</li>
+						<li class="mm-item"><a href="">Галлерея</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<div class="main-content">
+		<!-- ПРИВЕТСТВИЕ -->
+		<div class="meeting-wrapper">
+		<div class="container">
+		<h2>Добро пожаловать на кафедру проектирования радиотехнических систем летательных аппаратов факультета РТСЛА </h2>
+			<div class="col-md-6">
+				<p>Сложно представить современный мир без спутников, самолётов, машин, телевидения и мобильных телефонов. Общим для этого перечня является то, что все они функционируют благодаря радиоэлектронике!<br> <br>
+
+				Получив образование по специальности <span>«Радиоэлектронные устройства, системы и комплексы»</span> Вы не только будете ориентироваться в современных принципах построения систем и сложных комплексов, но и зарабатывать на собственных научно реализованных проектах. Опыт решения сложнейших задач современности передается студентам, которые уже со второго курса после плановых занятий могут посещать регулярные семинары кафедры и приобщаться к выполняемым на кафедре работам. <br> <br>
+
+				<b>Коллектив</b> кафедры, учитывая наличие международно признанных научных школ, ставит акценты в обучении именно на развитие у студентов навыков участия в таких проектах и сопровождения разработки от начала до конца (end-to-end). Студенты во время обучения учатся работать над тестовыми и реальными проектами самостоятельно и в коллективах. Всё это - залог успешного трудоустройства наших выпускников.</p>
+			</div>
+			<div class="col-md-6 meeting-pic">
+				<img src="images/radyxa.jpg" alt="">
+				<div class="block-colored"></div>
+				<p><b>Кафедра</b></p>
+				<span>Проектирования радиотехнических<br> систем летательных аппаратов</span>	
+			</div>
+			<div class="col-md-12 button_center">
+        		<button class="all-news"><a href="">Больше о кафедре</a></button>
+        </div>
+		</div> </div>
+		<!-- НОВОСТИ -->
+		<div class="news-wrapper">
+		<div class="container">
+			<h1>Новости кафедры</h1>
+        <div class="col-md-6 main-content-inner">
+            <div class="newsBigItem NewsBigPic">
+            	<img src="images/url.jpg" alt="">
+	            	<div class="image-overlay">
+	            		<div class="newsDate overlayBlack hov">
+	                    June 15, 2014
+	                	</div>
+		                <div class="newsContent overlayBlue hov">
+		                    <h2 class="coloredBlack"><a href="">Загаловок новости</a></h2>
+		                    <p class="subP"> Proin posuere non est at ornare. Duis aliquam sapien urna,
+		                        consectetur scelerisque ipsum malesuada in. Fusce venenatis
+		                        justo vel est posuere </p>
+		                        <div class="button_news"><a href="">Далее</a></div>
+		               </div>
+            		</div>
+            </div>
+        </div>
+        <div class="col-md-6 main-content-inner">
+                <div class="col-md-6">
+                    <div id="news1" class="newsSmallItem news-top news-left">
+                        <img src="images/url.jpg" alt="">
+		            	<div class="image-overlay">
+		            		<div class="newsDate overlayBlack hov-small">
+		                    June 15, 2014
+		                	</div>
+			                <div class="newsContent hov-small">
+			                    <h2 class="coloredBlack"><a href="">Загаловок новости</a></h2>
+			                    
+			               </div>
+	            		</div>
+                   </div>
+                </div>
+             
+                <div class="col-md-6">
+                    <div id="news2" class="newsSmallItem news-top news-right">
+                        <img src="images/url.jpg" alt="">
+		            	<div class="image-overlay">
+		            		<div class="newsDate overlayBlack hov-small">
+		                    June 15, 2014
+		                	</div>
+			                <div class="newsContent hov-small">
+			                    <h2 class="coloredBlack"><a href="">Загаловок новости</a></h2>
+			                   
+			               </div>
+	            		</div>
+                   </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div id="news3" class="newsSmallItem news-left">
+                        <img src="images/url.jpg" alt="">
+		            	<div class="image-overlay">
+		            		<div class="newsDate overlayBlack hov-small">
+		                    June 15, 2014
+		                	</div>
+			                <div class="newsContent hov-small">
+			                    <h2 class="coloredBlack"><a href="">Загаловок новости</a></h2>
+			                    
+			               </div>
+	            		</div>
+                   </div>
+                </div>
+                <div class="col-md-6">
+                    <div id="news4" class="newsSmallItem news-right">
+                        <img src="images/url.jpg" alt="">
+		            	<div class="image-overlay">
+		            		<div class="newsDate overlayBlack hov-small">
+		                    June 15, 2014
+		                	</div>
+			                <div class="newsContent hov-small">
+			                    <h2 class="coloredBlack"><a href="">Загаловок новости</a></h2>
+			                    
+			               </div>
+	            		</div>
+                   </div>
+                </div>
+        </div>
+        <div class="col-md-12 button_center">
+        	<button class="all-news">Все новости</button>
+        </div>
+	  </div>
+	 </div>
+		<!-- ГДЕ РАБОТАЮТ СТУДЕНТЫ -->
+		<div class="partners-wrapper">
+			<div class="container">
+			    <h1><span>Где работают</span> наши выпускники</h1>
+				<div class="partners-inner">
+					<div class="partners-item">
+						<a href=""><img src="images/partners/samsung.jpg" alt=""></a>
+						<p>Samsung Electronics</p>
+					</div>
+					<div class="partners-item">
+						<a href=""><img src="images/partners/ektos.jpg" alt=""></a>
+						
+						<p>Samsung Electronics</p>
+					</div>
+					<div class="partners-item">
+						<a href=""><img src="images/partners/logo-mirantis.png" alt=""></a>
+						
+						<p>Samsung Electronics</p>
+					</div>
+					<div class="partners-item">
+						<a href=""><img src="images/partners/fed.jpg" alt=""></a>
+						<p>Samsung Electronics</p>
+					</div>
+					<div class="partners-item">
+						<a href=""><img src="images/partners/tut.jpg" alt=""></a>
+						<p>Samsung Electronics</p>
+					</div>
+				</div>
+				<div class="partners-inner">
+					<div class="partners-item">
+						<a href=""><img src="images/partners/eth.jpg" alt=""></a>
+						<p>Samsung Electronics</p>
+					</div>
+					<div class="partners-item">
+						<a href=""><img src="images/partners/AALGroup.jpg" alt=""></a>
+						<p>Samsung Electronics</p>
+					</div>
+					<div class="partners-item">
+						<a href=""><img src="images/partners/umair.jpg" alt=""></a>
+						<p>Samsung Electronics</p>
+					</div>
+					<div class="partners-item">
+						<a href=""><img src="images/partners/logo-epam.png" alt=""></a>
+						<p>Samsung Electronics</p>
+					</div>
+					<div class="partners-item">
+						<a href=""><img src="images/partners/vesteron.jpg" alt=""></a>
+						<p>Samsung Electronics</p>
+					</div>
+				</div>
+				<div class="partners-inner">
+					
+					<div class="partners-item">
+						<a href=""><img src="images/partners/cisco.jpg" alt=""></a>
+						<p>Samsung Electronics</p>
+					</div>
+					<div class="partners-item">
+						<a href=""><img src="images/partners/medica.jpg" alt=""></a>
+						<p>Samsung Electronics</p>
+					</div>
+					<div class="partners-item">
+						<a href=""><img src="images/partners/logo-radiy.png" alt=""></a>
+						<p>Samsung Electronics</p>
+					</div>
+					<div class="partners-item">
+						<a href=""><img src="images/partners/usb.jpg" alt=""></a>
+						<p>Samsung Electronics</p>
+					</div>
+					<div class="partners-item">
+						<a href=""><img src="images/partners/hartron.jpg" alt=""></a>
+						<p>Samsung Electronics</p>
+					</div>
+					
+				</div>
+				<!-- <div class="partners-inner row_last">
+					<div class="partners-item">
+						<a href=""><img class="malyshev_icon" src="images/partners/malyshev.png" alt=""></a>
+						<p>Samsung Electronics</p>
+					</div>
+					<div class="partners-item">
+						<a href=""><img src="images/partners/ire.jpg" alt=""></a>
+						<p>Samsung Electronics</p>
+					</div>	
+				</div> -->
+			</div> </div>
+		<!-- БЛОК ЗАЯВКИ НА ПОСТУПЛЕНИЕ -->
+		<div class="call-to-action-wrapper">
+			<div class="container">
+				<h1><span>Хочешь получить образование</span> по специальности <br> «Радиоэлектронные устройства, системы и комплексы»?</h1>
+				<button><a href="">Подробнее о поступлении</a></button>
+			</div></div>
+		<!-- КОНТАКТЫ -->
+		<div class="contacts-wrapper">
+			<div class="container">
+				<div class="col-md-4">
+					<h2>Адресс</h2>
+					<p>НAУ им. М.Е. Жуковского <br>
+						"Харьковский авиационный институт" <br>
+						61070, г.Харьков <br>
+						ул. Чкалова, 17, Радиокорпус
+
+						</p>
+
+				</div>
+				<div class="col-md-4 centered">
+					<h2>Контакты</h2>
+					<p>
+						 <ul> Телефон:
+						 	<li>(057) 788 45 01 </li>
+						 	<li>(096) 670 47 34 </li>
+						 </ul>
+						 <span>email: <a  href="mailto:k501@ai.kharkov.com">k501@ai.kharkov.com</a></span>
+					</p>
+				</div>
+				<div class="col-md-4 centered">
+					<h2>График работы</h2>
+					<p>Понедельник-пятница<br>
+						09:00-17:00<br>
+						Обеденный перерыв<br>
+						13:30-13:45<br>
+					</p>
+				</div>
+			</div>
+		</div>
+		<!-- КАРТА -->	
+	<div class="map-wrapper">
+		<!-- <iframe src="https://www.google.com/maps/d/embed?mid=1UBcSUXm5aNNk7sGEnIPABRwA9hE&hl=ru&z=15" width="100%" height="400"></iframe> -->
+	</div>
+	</div>
+    <div class="slider"></div>
+    <div class="dev-section"></div>
+    <div class="footer-space"></div>
+</div>
+    <footer>
+    	<div class="container">
+    		<div class="footer-inner">
+    			<div class="links">
+    				<h2>Присоединяйся к нам!</h2>
+    				<i class="fa fa-vk" aria-hidden="true"></i>
+    				<i class="fa fa-facebook" aria-hidden="true"></i>
+    				<i class="fa fa-twitter" aria-hidden="true"></i>
+
+    			</div>
+    			<ul class="footer-menu">
+    				<li><a href="">Новости</a></li>
+    				<li><a href="">Абитуриенту</a></li>
+    				<li><a href="">Научная школа</a></li>
+    				<li><a href="">Библиотека</a></li>
+    				<!-- <li><a href="">Кафедра</a></li> -->
+    			</ul>
+    			<form class="form-wrapper">
+						<input type="text" placeholder="Поиск" required>
+						<button type="submit"><i class="fa fa-search"></i></button>
+				</form>
+    		</div>
+    	</div>
+    	<div class="copyright">
+	    		<div class="container">
+	    			© 2016 <a href="#">Кафедра проектирования радиотехнических систем летательных аппаратов  НАУ ХАИ им. М.Е. Жуковского</a>.<br>
+					При использовании материалов, размещенных на сайте, необходимо обязательно указать сайт. <br>
+					Сайт сделан Сашко! В случае если хотите купить мне пивка то берите корону 0.5
+	    		</div>
+			</div>
+    </footer>
+</main> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/1.13.0/mocha.min.js"></script>
+    <script src='libs/jquery/dist/jquery.min.js'></script>
+    <script src="libs/bootstrap/js/bootstrap.min.js"></script>
+    
+<!--    <script src="libs/jquery-1.11.1.min.js"></script>-->
+    <script src="libs/owl-carousel/owl.carousel.min.js"> </script>
+    <script src="libs/slideout.min.js"></script>
+    <script src="js/common.js"></script>
+
+    
+</body>
+</html>
